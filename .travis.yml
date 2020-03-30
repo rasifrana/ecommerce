@@ -1,0 +1,6 @@
+language: python
+python:
+- "3.4"
+install: "pip3 install requirements.txt"
+script: 
+- SECRET_KEY="rasifrana" ./manage.py test

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rasifrana/ecommerce.svg?branch=master)](https://travis-ci.com/rasifrana/ecommerce)
+
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
 Welcome Asif Rana,
