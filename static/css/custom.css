@@ -55,6 +55,7 @@ caption p {
 .panel-default {
     border-color: transparent;
     padding: 0 10px;
+    margin-right: 3px;
 }
 
 .panel-body {
