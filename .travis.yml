@@ -1,6 +1,6 @@
 language: python
 python:
 - "3.4"
-install: "pip install requirements.txt"
-script: 
+install: "pip install -r requirements.txt"
+script:
 - SECRET_KEY="rasifrana" ./manage.py test
