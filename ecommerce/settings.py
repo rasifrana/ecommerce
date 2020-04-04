@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
     'accounts',
+    'home',
     'products',
     'cart',
     'checkout',
@@ -136,6 +137,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "static"),
+# )
+
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+
+
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2080 20:00:00 GMT',
     'CacheControl': 'max-age=94608000'
@@ -163,6 +174,7 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
