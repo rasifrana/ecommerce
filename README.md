@@ -1,37 +1,108 @@
-[![Build Status](https://travis-ci.com/rasifrana/ecommerce.svg?branch=master)](https://travis-ci.com/rasifrana/ecommerce)
+# Stacked. (Investment Portfolio)
 
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+An investment portfolio tracker designed for all types of Investers to keep track of their assets
 
-Welcome Asif Rana,
+## UX
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+If you have an investment portfolio and want to keep the record of all of your investment portfolio then Stacked is the perfect way of keeping track of every single change of
+your investment. whether it is traditional assets like Real Estate, Stocks, bonds and others or Digital Asssets like Bitcoin, Litecoin, Ethereum and other altcoins, you can store all the information and history of these assets in your profile.
 
-## Gitpod Reminders
+It is easy to create portfolio, add more assets to portfolio , make any changes and track all activities
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The following activities can be performed -
 
-`python3 -m http.server`
+- Add any investment to portfolio list
+- Make any changes to existing asset
+- Remove any asset from the list
+- Track prices and profit / loss activity on each asset
+- There is whole list of assets type/ catagory but more investment type can also be added accordingly
+- Make any changes to these types
+- No installation of application. Completely web based and responsive
 
-A blue button should appear to click: *Make Public*,
+## Wireframes
 
-Another blue button should appear to click: *Open Browser*.
+Wireframe for this projects (links are below).
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Desktop wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/landing-desktop.pdf
 
-A blue button should appear to click: *Make Public*,
+- Mobile Devices wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/mobile-version.pdf
 
-Another blue button should appear to click: *Open Browser*.
+- All wireframes - https://github.com/rasifrana/task_manager/tree/master/static/mockups
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+## Features
 
-## Updates Since The Instructional Video
+- Easy to navigate and user friendly UI 
+- Create tailored portfolio or multiple portfolios
+- Manage portfolio on the go
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+## Future Developments
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ This application can be improved in many ways. Authantication and authorisation is first in the list. This can be connecting to many exchanges
+ using Public API and real time data can be fetched showing the latest price of assets. More financial instruments can also be added, like budget planner and savings portfolio.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Visual representation of portfolio
 
---------
+This project is very simple to use and divided in sections to add assets
 
-Happy coding!
+- **Section 1** is Landing Page with easy navigation and main header explaining the purpose of this application
+
+- **Section 2** Beautiful cards displayed with multiple types of assets that can be stored in user's profile
+
+- **Section 3** It is divided into two different sections representing Key features and support for users
+
+- **Section 4** This section has the message from CEO and his vision for the future development 
+
+- **Section 5** This section,provides information about company and contact etails
+
+
+**Page 2 / Portfolio Page**  Here is the user interface for all the assets that are stored in database. By navigating to this page, a query is made to the database (NoSql)
+and results are fetched in the form of each block that contains information about the assets and history. There are many properties like price, date of purchase and type of investment.
+
+**Page 3 / Investment Types** You can view all types of assets available at this page and more can be added 
+
+**Forms** Forms are created on URL's for adding or updating assets and assets types
+
+## Technologies Used
+
+- HTML5
+
+  - Basic html structure / markup.
+
+- CSS3
+
+  - CSS3 for custom styling
+
+- Bootstrap
+
+  - Most of the interface is craeted using bootstrap 4
+
+- Google fonts
+  - to make website beautifully, Montserrat font-family was used referencing https://fonts.google.com/ CDN
+
+- Font Awsome
+  - All icons are refferenced to Font Awsome CDN
+
+## Testing
+
+
+This project is completely responsive with different layout on small and mobile devices. This was done using media queries.
+
+## Deployment
+
+Local git repository was initated in the begining of this project and several commits were made during the development.
+
+Project was pushed to remote repository on https://github.com/rasifrana/task_manager on master branch.
+
+## Heroku
+
+Project is deployed at https://health-ecommerce.herokuapp.com/
+
+## Credits
+
+### Media
+
+- The photo used in this site were obtained from https://unsplash.com
+
+### Acknowledgements
+
+- I received inspiration for this project from dribble
