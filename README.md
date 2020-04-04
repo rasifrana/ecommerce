@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rasifrana/ecommerce.svg?branch=master)](https://travis-ci.com/rasifrana/ecommerce)
+
 # Stacked. (Investment Portfolio)
 
 An investment portfolio tracker designed for all types of Investers to keep track of their assets
