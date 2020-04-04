@@ -3,6 +3,7 @@
 {% load bootstrap_tags %}
 
 {% block content %}
+<div class="container">
 <div class="row row-flex">
     {% for item in cart_items %}
     
@@ -37,6 +38,8 @@
     <p>Total</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+</div>
+
 </div>
 
 {% endblock %}
