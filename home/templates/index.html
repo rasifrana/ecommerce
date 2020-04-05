@@ -66,10 +66,10 @@
     <!-- Showcase cards -->
 
     <div class="row mt-5">
-        <div class="show-product col-xs-12 col-sm-4 mb-3">
+        <div class="show-product col-xs-12 col-sm-4 mb-3" data-aos="fade-right">
         <div class="product-text">
         <h3>Healthy product</h3>
-        <h4> <a href="{% url 'products' %}" class="color-white" role="button">Shop Products</a> </h4>
+        <h4> <a href="{% url 'products' %}" class="color-white product-btn" role="button">Show Products</a> </h4>
         
         </div>
         
@@ -78,10 +78,10 @@
         </div>
 
         <!-- 2nd item -->
-        <div class="show-product col-xs-12 col-sm-4">
+        <div class="show-product col-xs-12 col-sm-4 mb-3">
         <div class="product-text">
         <h3>Stay Active</h3>
-        <h4> <a href="{% url 'products' %}" class="color-white" role="button">Show Products</a> </h4>
+        <h4> <a href="{% url 'products' %}" class="color-white product-btn" role="button">Show Products</a> </h4>
         
         </div>
         
@@ -90,10 +90,10 @@
         </div>
         <!-- 3rd Item -->
 
-        <div class="show-product col-xs-12 col-sm-4">
+        <div class="show-product col-xs-12 col-sm-4 mb-3" data-aos="fade-left">
         <div class="product-text">
         <h3>Muscle Strength</h3>
-        <h4> <a href="{% url 'products' %}" class="color-white" role="button">Show Products</a> </h4>
+        <h4> <a href="{% url 'products' %}" class="color-white product-btn" role="button">Show Products</a> </h4>
         
         </div>
         
@@ -108,7 +108,7 @@
     </div>
 
 <div class="background bg-success mt-5">
-<div class="container">
+<div class="container" data-aos="fade-right">
 <h2>Featured Products</h2>
 </div>
 </div>
@@ -220,7 +220,7 @@
 </div>
 
 <!-- Deals Section -->
-<section class="deals-section bg-primary mt-5">
+<section class="deals-section bg-primary mt-5" data-aos="fade-up">
 
 <h3 class="mb-3">Deals of the Week</h3>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ut.</p>
@@ -258,11 +258,17 @@
 
 <!-- New Items Section -->
 
+<div class="background bg-success ml-auto mt-5">
+<div class="container" data-aos="fade-left">
+<h2>Best Prices Guaranteed</h2>
+</div>
+</div>
+
 <section class="mt-5">
     <div class="row disc-section bg-lite">
         <div class="col-sm-7 bg-lite discount">
 
-        <div class="desc-heading">
+        <div class="desc-heading" data-aos="flip-up">
             <h1> 30% Discount</h1>
             <h3>ALL ITEMS</h3>
             <a href="{% url 'products' %}" class="btn btn-success" role="button">Shop Now</a>
@@ -283,7 +289,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="img-responsive" src="https://images.unsplash.com/photo-1514995669114-6081e934b693?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2736&q=80" alt="...">
+      <img class="img-responsive" src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="...">
       <div class="carousel-caption">
         <h2 class="mb-3">Eat Healthy, Stay Healthy</h2>
     <p>From nutrition and exercise to supplements and recipes, you'll find it here.</p>
@@ -291,7 +297,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1579722820308-d74e571900a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80" alt="...">
+      <img src="https://images.unsplash.com/photo-1565071783280-719b01b29912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="...">
       <div class="carousel-caption">
         <h2 class="mb-3">Eat Healthy, Stay Healthy</h2>
     <p>From nutrition and exercise to supplements and recipes, you'll find it here.</p>
@@ -300,7 +306,7 @@
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" alt="...">
+      <img src="https://images.unsplash.com/photo-1579165609983-75afcf119b64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1520&q=80" alt="...">
       <div class="carousel-caption color-white">
         <h2 class="mb-3">Eat Healthy, Stay Healthy</h2>
     <p>From nutrition and exercise to supplements and recipes, you'll find it here.</p>
@@ -335,8 +341,8 @@
 <section>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <i class="fa fa-shopping"></i>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <i class="fa fa-truck fa-3x" aria-hidden="true"></i>
                 <div>
                     <h4>FREE SHIPPING</h4>
                     <p>For orders above $100</p>
@@ -344,8 +350,8 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <i class="fa fa-shopping"></i>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <i class="fa fa-retweet fa-3x" aria-hidden="true"></i>
                 <div>
                     <h4>HAPPY RETURNS</h4>
                     <p>7 Days free Returns</p>
@@ -353,8 +359,8 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <i class="fa fa-shopping"></i>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
                 <div>
                     <h4>100% MONEY BACK</h4>
                     <p>If product is damaged</p>
@@ -362,8 +368,8 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <i class="fa fa-shopping"></i>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
                 <div>
                     <h4> SUPPORT</h4>
                     <p>We provide support 24/7</p>

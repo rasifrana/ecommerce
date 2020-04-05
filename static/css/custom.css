@@ -1,16 +1,10 @@
 body {
     font-family: Arial;
-    padding-top: 0;
+    padding-top: 60px;
     /* background-color: turquoise; */
 }
 
-footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
-}
+
 
 .icon-bar {
     background-color: #fff;
@@ -35,6 +29,11 @@ footer {
 
 .mt-5 {
     margin-top: 50px;
+}
+
+.ml-auto {
+    margin-left: 50%;
+    align-content: right;
 }
 
 .mb-3 {
@@ -64,7 +63,9 @@ footer {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 100% !important;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
 }
 
 caption p {
@@ -107,6 +108,13 @@ bottom:auto;
 -webkit-transform:translate(0, -50%);
 -ms-transform:translate(0, -50%);
 transform:translate(0, -50%);
+}
+
+.product-btn {
+    padding: 6px 4px;
+    margin-top: 5px;
+    border: 1px solid purple;
+    border-radius: 3px;
 }
 
 .show-product,
@@ -185,7 +193,7 @@ transform:translate(0, -50%);
 }
 
 .sm-carousel {
-    padding: 0;
+    padding-left: 0;
 }
 
 .desc-heading {
@@ -206,4 +214,12 @@ transform:translate(0, -50%);
 .feature-content h6 {
     text-transform: uppercase;
     font-size: 1.6rem;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ededed;
+    color: #A9A9A9;
 }
