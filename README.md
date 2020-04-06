@@ -1,68 +1,108 @@
 [![Build Status](https://travis-ci.com/rasifrana/ecommerce.svg?branch=master)](https://travis-ci.com/rasifrana/ecommerce)
 
-# Stacked. (Investment Portfolio)
+# Health Store. (Online Shop)
 
-An investment portfolio tracker designed for all types of Investers to keep track of their assets
 
-## UX
 
-If you have an investment portfolio and want to keep the record of all of your investment portfolio then Stacked is the perfect way of keeping track of every single change of
-your investment. whether it is traditional assets like Real Estate, Stocks, bonds and others or Digital Asssets like Bitcoin, Litecoin, Ethereum and other altcoins, you can store all the information and history of these assets in your profile.
 
-It is easy to create portfolio, add more assets to portfolio , make any changes and track all activities
 
-The following activities can be performed -
 
-- Add any investment to portfolio list
-- Make any changes to existing asset
-- Remove any asset from the list
-- Track prices and profit / loss activity on each asset
-- There is whole list of assets type/ catagory but more investment type can also be added accordingly
-- Make any changes to these types
-- No installation of application. Completely web based and responsive
+![](http://imgur.com/t3teAxi.png)
+### :handbag: A simple RESTful API for Purchases and Products
+
+ [![GitHub release](https://img.shields.io/github/release/ovflowd/ecommerce.svg)]() 
+
+## Deploy
+
+<a href="http://health-ecommerce.herokuapp.com/"><img src="https://dailysmarty-production.s3.amazonaws.com/uploads/post/img/509/feature_thumb_heroku-logo.jpg" width="40" height="32"></a> <a href="https://bluemix.net/deploy?repository=https://github.com/sant0ro/eCommerce"><img src="https://bluemix.net/deploy/button.png" height="32"></a>
+
+## Features
+
+<b>Products Features</b>
+
+| Feature  |  Added    | Description  |
+|----------|:-------------:|:-------------|
+| Add a Product | &#10004; | Ability of Add a Product on the System |
+| List Products | &#10004; | Ability of List Products |
+| Search a Product | &#10004; | Ability to Filter Products |
+
+<b>Purchase Features</b>
+
+| Feature  |  Added       | Description  |
+|----------|:-------------:|:-------------|
+| See Cart | &#10004; | Ability to see the Cart and it items |
+| Edit a Cart | &#10004; | Ability of Edit Quantity |
+| Add Item | &#10004; | Ability of add a new Item on the Cart |
+| Remove a Item | &#10004; | Ability of Remove a Item from the Cart |
+| Checkout | &#10004; | Ability to Checkout |
+
+# Health eCommerce
+
+**This eCommerce** project is built using Django. The Django project has 8 applications: 1)storages - this app stores and retrieves static files (css,js and media/images) from Amazon AWS. 2) accounts - this app contains the reference to all the users's information on their accounts and credentials that are used to create, modify and use login and signup information. 3) products -this app contains and stores all the references to products (id,category,price,quantity) in the 'stock' database of the website. 4) cart - this app contains and stores all the information that connects the products to the cart and to finally the (last) app 'checkout'. 5) checkout - this app contains and stores all the information that related to products, accounts and carts so that products can be ordered and purchased using Stripe's API.
+
+Project is connected to a PostgresSQL database that can be modified locally or through cloud. Project also takes staticfiles that are served from an online AWS Amazon Bucket. Project implements the STRIPE api configurations that allow purchases to be made for the products stored in the APPs.
+
+The project ignores any senstive commits to github and preserves private keys. Requirements.txt file allow for a quick installation of the requirements for the projects using 'pip -r install requirements.txt'
+
+## Requirements
+
+boto3==1.12.32
+botocore==1.15.32
+dj-database-url==0.5.0
+Django==1.11.24
+django-forms-bootstrap==3.1.0
+django-storages==1.9.1
+docutils==0.15.2
+gunicorn==20.0.4
+jmespath==0.9.5
+olefile==0.46
+Pillow==4.3.0
+psycopg2==2.8.4
+pytz==2019.3
+s3transfer==0.3.3
+stripe==2.44.0
+
+
+## Installation
+
+Project can be run locally by cloning/downloading this repository and by cd'ing into the main project directory (where manage.py is contained) that is the main directory for project.From there project can be run locally by using the command python manage.py runserver on the terminal.
+
+
 
 ## Wireframes
 
 Wireframe for this projects (links are below).
 
-- Desktop wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/landing-desktop.pdf
+- Landing wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/landing-desktop.pdf
 
-- Mobile Devices wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/mobile-version.pdf
+- Checkout wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/mobile-version.pdf
 
-- All wireframes - https://github.com/rasifrana/task_manager/tree/master/static/mockups
 
 ## Features
 
 - Easy to navigate and user friendly UI 
-- Create tailored portfolio or multiple portfolios
-- Manage portfolio on the go
+- All information stored on cloud
+- Payment method with Stripe
 
 ## Future Developments
 
- This application can be improved in many ways. Authantication and authorisation is first in the list. This can be connecting to many exchanges
- using Public API and real time data can be fetched showing the latest price of assets. More financial instruments can also be added, like budget planner and savings portfolio.
+ This application can be improved in many ways. Different catagories can be added for products. All links can be provided in the footer.
 
 ### Visual representation of portfolio
 
 This project is very simple to use and divided in sections to add assets
 
-- **Section 1** is Landing Page with easy navigation and main header explaining the purpose of this application
+- **Landing Page** is Landing Page with easy navigation and main header showcasing the products
 
-- **Section 2** Beautiful cards displayed with multiple types of assets that can be stored in user's profile
+- **Products Page** Beautiful cards displayed with multiple types of products
 
-- **Section 3** It is divided into two different sections representing Key features and support for users
+- **Cart Page** All selected items stored in cart
 
-- **Section 4** This section has the message from CEO and his vision for the future development 
-
-- **Section 5** This section,provides information about company and contact etails
+- **Checkout Page** Checkout with payment details
 
 
-**Page 2 / Portfolio Page**  Here is the user interface for all the assets that are stored in database. By navigating to this page, a query is made to the database (NoSql)
-and results are fetched in the form of each block that contains information about the assets and history. There are many properties like price, date of purchase and type of investment.
 
-**Page 3 / Investment Types** You can view all types of assets available at this page and more can be added 
-
-**Forms** Forms are created on URL's for adding or updating assets and assets types
+**Forms** Forms are created using django built-in Forms
 
 ## Technologies Used
 
@@ -76,7 +116,7 @@ and results are fetched in the form of each block that contains information abou
 
 - Bootstrap
 
-  - Most of the interface is craeted using bootstrap 4
+  - Most of the interface is craeted using bootstrap 
 
 - Google fonts
   - to make website beautifully, Montserrat font-family was used referencing https://fonts.google.com/ CDN
@@ -84,22 +124,31 @@ and results are fetched in the form of each block that contains information abou
 - Font Awsome
   - All icons are refferenced to Font Awsome CDN
 
+- dJango framework
+ - For backend
+
+- PostgresSQL 
+ - Database
+
 ## Testing
 
+ Travis CI for build added
+
+## Responsive
 
 This project is completely responsive with different layout on small and mobile devices. This was done using media queries.
 
 ## Deployment
 
-Local git repository was initated in the begining of this project and several commits were made during the development.
+Project is connected to heroku.git (from which it is automatically deployed). This repo is a new copy of the existing heroku.git repo (https://git.heroku.com/health-commerce.git)
 
-Project was pushed to remote repository on https://github.com/rasifrana/task_manager on master branch.
+Project was also pushed to remote repository on https://github.com/rasifrana/ecommerce on master branch.
 
 ## Heroku
 
 Project is deployed at https://health-ecommerce.herokuapp.com/
 
-## Credits
+
 
 ### Media
 
@@ -107,4 +156,4 @@ Project is deployed at https://health-ecommerce.herokuapp.com/
 
 ### Acknowledgements
 
-- I received inspiration for this project from dribble
+- I received inspiration for this project from code institute team
