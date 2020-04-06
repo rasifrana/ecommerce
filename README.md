@@ -83,9 +83,9 @@ Project can be run locally by cloning/downloading this repository and by cd'ing 
 
 Wireframe for this projects (links are below).
 
-- Landing wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/landing-desktop.pdf
+- Landing wireframe: https://github.com/rasifrana/ecommerce/blob/master/wireframes/ecommerce%20landing%20page.pdf
 
-- Checkout wireframe: https://github.com/rasifrana/task_manager/blob/master/static/mockups/mobile-version.pdf
+- Checkout wireframe: https://github.com/rasifrana/ecommerce/blob/master/wireframes/ecommerce%20landing%20page.pdf
 
 
 ## Features
