@@ -8,13 +8,14 @@
 
 
 ![](http://imgur.com/t3teAxi.png)
-### :handbag: A simple RESTful API for Purchases and Products
+### :handbag: A simple store for Purchases and Products
 
  [![GitHub release](https://img.shields.io/github/release/ovflowd/ecommerce.svg)]() 
 
 ## Deploy
 
-<a href="http://health-ecommerce.herokuapp.com/"><img src="https://dailysmarty-production.s3.amazonaws.com/uploads/post/img/509/feature_thumb_heroku-logo.jpg" width="40" height="32"></a> <a href="https://bluemix.net/deploy?repository=https://github.com/sant0ro/eCommerce"><img src="https://bluemix.net/deploy/button.png" height="32"></a>
+<a href="http://health-ecommerce.herokuapp.com/"><img src="https://dailysmarty-production.s3.amazonaws.com/uploads/post/img/509/feature_thumb_heroku-logo.jpg" width="60" height="60"></a> 
+
 
 ## Features
 
@@ -38,7 +39,16 @@
 
 # Health eCommerce
 
-**This eCommerce** project is built using Django. The Django project has 8 applications: 1)storages - this app stores and retrieves static files (css,js and media/images) from Amazon AWS. 2) accounts - this app contains the reference to all the users's information on their accounts and credentials that are used to create, modify and use login and signup information. 3) products -this app contains and stores all the references to products (id,category,price,quantity) in the 'stock' database of the website. 4) cart - this app contains and stores all the information that connects the products to the cart and to finally the (last) app 'checkout'. 5) checkout - this app contains and stores all the information that related to products, accounts and carts so that products can be ordered and purchased using Stripe's API.
+**This eCommerce** project is built using Django. The Django project has 7 applications: 
+
+1) media - this app stores and retrieves static files (css,js and media/images) from Amazon AWS. 
+2) accounts - this app contains the reference to all the users's information on their accounts and credentials that are used to create, modify and use login and signup information. 
+3) products -this app contains and stores all the references to products (id,category,price,quantity) in the 'products' database of the website. 
+4) cart - this app contains and stores all the information that connects the products to the cart and to finally the (last) app 'checkout' using Sessions. 
+5) checkout - this app contains and stores all the information that related to products, accounts and carts so that products can be ordered and purchased using Stripe's API.
+6) home - Main Landing page and to showcase some products
+7) search - This app is used to filter products on a page
+
 
 Project is connected to a PostgresSQL database that can be modified locally or through cloud. Project also takes staticfiles that are served from an online AWS Amazon Bucket. Project implements the STRIPE api configurations that allow purchases to be made for the products stored in the APPs.
 
