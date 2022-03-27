@@ -19,7 +19,7 @@
 
 ## Features
 
-<b>Products Features</b>
+<b>Products Features!</b>
 
 | Feature  |  Added    | Description  |
 |----------|:-------------:|:-------------|
